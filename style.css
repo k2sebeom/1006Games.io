@@ -1,3 +1,19 @@
+.iframe-bg {
+	position: relative; 
+	display: flex; 
+	justify-content: center; 
+	margin-top: 5rem;
+	height: 600px;
+}
+
+iframe {
+	position: absolute;
+}
+
+.iframe-bg > .container {
+	margin-top: 200px;
+}
+
 .download-card {
 	padding: 20px;
 }
