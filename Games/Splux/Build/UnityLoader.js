@@ -866,7 +866,6 @@ var UnityLoader = UnityLoader || {
       var testRequest = idb.open("/idbfs-test");
       testRequest.onerror = function(e) { e.preventDefault(); setupIndexedDB(); }
       testRequest.onsuccess = function() { testRequest.result.close(); setupIndexedDB(idb); }
-      setTimeout(setupIndexedDB, 1000);
     } catch (e) {
       setupIndexedDB();
     }
@@ -1044,6 +1043,7 @@ var UnityLoader = UnityLoader || {
       Module.canvas.style.width = "100%";
       Module.canvas.style.height = "100%";
       Module.canvas.addEventListener("contextmenu", function (e) { e.preventDefault() }),
+      Module.canvas.addEventListener("dragstart", function (e) { e.preventDefault() }),
       Module.canvas.id = "#canvas";
       container.appendChild(Module.canvas);
       Module.deinitializers.push(function(){
@@ -1331,7 +1331,6 @@ var UnityLoader = UnityLoader || {
           }
         };
         openRequest.onerror = function () { initDatabase(null); };
-        setTimeout(openRequest.onerror, 1000);
       } catch (e) {
         initDatabase(null);
       }
