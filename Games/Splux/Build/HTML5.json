@@ -1,7 +1,7 @@
 {
 "companyName": "1006Games",
 "productName": "Splux",
-"productVersion": "0.1.2",
+"productVersion": "0.1.3",
 "dataUrl": "HTML5.data.unityweb",
 "wasmCodeUrl": "HTML5.wasm.code.unityweb",
 "wasmFrameworkUrl": "HTML5.wasm.framework.unityweb",
@@ -10,7 +10,7 @@
 "splashScreenStyle": "Dark",
 "backgroundColor": "#000000",
 "cacheControl": {"default": "must-revalidate"},
-"developmentBuild": true,
+"developmentBuild": false,
 "multithreading": false,
 "unityVersion": "2019.3.9f1"
 }
